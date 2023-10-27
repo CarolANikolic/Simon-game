@@ -1,0 +1,22 @@
+button {
+    border: 10px solid black;
+    border-radius: 20%;
+    width: 150px;
+    height: 150px;
+}
+
+.buttonsContainer__green-button {
+    background-color: green;
+}
+
+.buttonsContainer__red-button {
+    background-color: red;
+}
+
+.buttonsContainer__yellow-button {
+    background-color: yellow;
+}
+
+.buttonsContainer__blue-button {
+    background-color: blue;
+}
