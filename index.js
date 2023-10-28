@@ -1,5 +1,6 @@
 import Button from "./src/components/Button/index.js";
 import gameButtons from "./src/assets/objects/gameButtons.js";
+import handleButtonClick from "./src/assets/functions/handleButtonClick.js";
 
 const main = $("main");
 const buttonsContainer = $("<div>");
@@ -15,10 +16,13 @@ $(gameButtons).each((i, gameBtn) => {
         gameBtn.type, 
         gameBtn.id, 
         gameBtn.style,
-        () => console.log("clicked")
+        () => 
+        handleButtonClick(
+            gameBtn, 
+            "buttonsContainer--button-pressed", 
+            50
+            )
         ))
 });
-
-
 
 main.append(buttonsContainer)
