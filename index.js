@@ -19,6 +19,7 @@ $(gameButtons).each((i, gameBtn) => {
         () => 
         handleButtonClick(
             gameBtn, 
+            i,
             "buttonsContainer--button-pressed", 
             50
             )
