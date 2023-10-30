@@ -1,9 +1,12 @@
 const clickedButtons = [];
+const randomBlinkedButtons = [];
 
-const saveClickedBtn = (buttonNumber) => {
-    clickedButtons.push(buttonNumber)
-
-    return clickedButtons
+const saveClickedBtn = (buttonNumber, keyword = "default") => {
+    if (keyword === "click") {
+        clickedButtons.push(buttonNumber)
+    } else {
+        randomBlinkedButtons.push(buttonNumber)
+    }
 }
 
-export default saveClickedBtn
+export { clickedButtons, randomBlinkedButtons, saveClickedBtn }
