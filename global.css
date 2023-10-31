@@ -39,4 +39,9 @@ main {
   height: 300px;
 }
 
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
 

@@ -3,7 +3,7 @@ const blinkButton = (btnData, style, intervalTime) => {
 
     $(btnElement).addClass(style);
 
-    setInterval(() => {
+    setTimeout(() => {
         $(btnElement).removeClass(style);
     }, intervalTime)
 }
