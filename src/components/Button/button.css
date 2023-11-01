@@ -3,6 +3,8 @@ button {
     border-radius: 20%;
     width: 150px;
     height: 150px;
+    outline: none;
+    cursor: pointer;
 }
 
 .buttonsContainer__green-button {
