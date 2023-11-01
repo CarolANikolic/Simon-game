@@ -3,9 +3,6 @@ import levelUp from "./levelUp.js";
 let gameLevel = 0;
 
 const compareClickedButtons = (randomBlinkedButtons, clickedButtons, title) => {
-
-    console.log("Blink sequence: " + randomBlinkedButtons)
-    console.log("Player sequence: " + clickedButtons)
     
     let isClickedBtnCompatible = true;
     let clickedButtonsLength = clickedButtons.length;

@@ -6,7 +6,6 @@ import compareClickedButtons from "./src/assets/functions/compareClickedButtons.
 import startGameRound from "./src/assets/functions/startGameRound.js";
 import gameOver from "./src/assets/functions/gameOver.js";
 
-
 // Create and access necessary containers and elements
 const main = $("main");
 const buttonsContainer = $("<div>");
@@ -59,7 +58,7 @@ const autoStartNewRound = () => {
                 "buttonsContainer--button-pressed",
                 50
             );
-        }, 1500); 
+        }, 1000); 
     }
 };
 

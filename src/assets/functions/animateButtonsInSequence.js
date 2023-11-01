@@ -22,7 +22,7 @@ const animateButtonsInSequence = (
         } else {
             clearInterval(animationTimer);
         }
-    }, 1500);
+    }, 1000);
 };
 
 export default animateButtonsInSequence
