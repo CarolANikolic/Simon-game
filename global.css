@@ -44,4 +44,10 @@ main {
   opacity: 0.8;
 }
 
+@media screen and (max-width: 1024px) {
+    .gameTitle-smaller-devices {
+      padding: 0 5%;
+    }
+}
+
 
