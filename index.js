@@ -39,7 +39,6 @@ title.addClass("gameTitle gameTitle-smaller-devices")
     } else {
         updateTitle(title, "Press a Key to Start");
     }
-
 main.append(title)
 
 // Create Buttons and append them into main
@@ -74,6 +73,7 @@ const autoStartNewRound = () => {
             currentButtonIndex = 0;
             isGameInProgress = true;
             startGameRound(
+                main,
                 animationTimer,
                 currentButtonIndex, 
                 randomBlinkedButtons, 
@@ -91,6 +91,7 @@ $(document).on("keydown", () => {
     if (!isGameInProgress) {
         isGameInProgress = true;
         startGameRound(
+            main,
             animationTimer,
             currentButtonIndex, 
             randomBlinkedButtons, 
